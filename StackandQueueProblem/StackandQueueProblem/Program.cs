@@ -9,6 +9,18 @@ class Program
         stack_.push(70);
         stack_.push(30);
         stack_.push(56);
-       
+        stack_.peek();
+        stack_.Display();
+
+        stack_.Pop();
+
+        stack_.Display();
+        stack_.Pop();
+
+        stack_.Display();
+        stack_.Pop();
+
+        stack_.Display();
+        stack_.Pop();
     }
 }

@@ -39,5 +39,37 @@ namespace StackandQueueProblem
             this.top = node;
             Console.WriteLine("{0} pushed to stack", data);
         }
+        public void peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            else
+            {
+                Console.WriteLine("{0} is in the top of stack", top.data);
+            }
+        }
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty deletion is not possible");
+            }
+            else
+            {
+                Console.WriteLine("Values popped is {0}", top.data);
+                top = top.Next;
+            }
+        }
+        public void Display()
+        {
+            Node temp = this.top;
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data + "");
+                temp = temp.Next;
+            }
+        }
     }
 }
